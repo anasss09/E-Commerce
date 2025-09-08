@@ -5,7 +5,6 @@ const path = require('path')
 const hbs = require('hbs');
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
-require('dotenv').config()
 
 app.use(session({
   secret: process.env.SESSION_SECRET,

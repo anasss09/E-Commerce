@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon --env-file=.env app.js js,mjs,cjs,json,hbs"
+    "dev": "nodemon --env-file=.env app.js js,mjs,cjs,json,hbs",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
