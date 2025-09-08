@@ -14,7 +14,7 @@ app.use(session({
     ttl: 14 * 24 * 60 * 60
    }),
     cookie: {
-      secure: process.env.NODE_ENV === "production", // only HTTPS in prod
+      secure: true,
       httpOnly: true,
       sameSite: "lax"
     }
