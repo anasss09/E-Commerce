@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/navbar.css">
+    {{!-- <link rel="stylesheet" href="/style/product-list.css"> --}}
+    <style>
+        .product-item {
+            flex: 0 0 auto;
+            /* Prevent shrinking/wrapping */
+            width: 220px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .h4 {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .btn {
+            background-color: #ffc107;
+            padding: 5px 8px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    {{> navbar}}
+
+    <div class="product-item">
+        <div class="my-product-image">
+            <img src={{Product.imageUrl}}>
+        </div>
+        <br>
+        <h4 >Product Name: {{Product.name}}</h4>
+        <h4>Product Price: {{Product.price}}</h4>
+        <h4>Product Description: {{Product.description}}</h4>
+        <h4>Product Seller: {{Product.seller}}</h4>
+        <h4>Product Category: {{Product.category}}</h4>
+        <h4>Reviews:</h4>
+        <ul>
+            {{#each Product.reviews as |r|}}
+            <li>{{r}}</li>
+            {{/each}}
+        </ul>
+
+    </div>
+
+    <a href="/shop/cart/add/{{Product._id}}">
+        <button class="btn">Add to cart</button>
+    </a>
+
+    <a href="#">
+        <button class="btn">Buy Now</button>
+    </a>
+
+</body>
+
+</html>

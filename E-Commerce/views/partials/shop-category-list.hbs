@@ -1,0 +1,30 @@
+<div class="category">
+
+    {{#each Product as |category|}}
+    <div class="category-title">{{@key}}</div>
+    <div class="product-list">
+        {{#each category as |p|}}
+        <a class="productLinks" href="/shop/products/{{p._id}}">
+
+            <div class="product-item">
+                <div class="my-product-image">
+                    <img src={{p.imageUrl}}>
+                </div>
+                <br>
+                <h4>Product Name: {{p.name}}</h4>
+                <h4>Product Price: {{p.price}}</h4>
+
+                <div class="button-group">
+                    <a href="/shop/cart/add/{{p._id}}">
+                        <button class="edit-btn">Add to cart</button>
+                    </a>
+
+                </div>
+
+            </div>
+        </a>
+
+        {{/each}}
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        .button-grp {
+            display: flex;
+            justify-content: space-around;
+            align-items: space-between;
+        }
+
+        button {
+            min-height: 30px;
+            width: 100px;
+            background-color: coral;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/style/navbar.css">
+</head>
+<body>
+
+    {{> navbar}}
+
+    <h1>This is Admin Page</h1>
+
+    <div class="button-grp">
+        <a href="admin/products/all">
+            <button>VIEW PRODUCTS</button>
+        </a>
+
+        <a href="/admin/products/add">
+            <button>ADD PRODUCTS</button>
+        </a>
+    </div>
+
+
+</body>
+</html>

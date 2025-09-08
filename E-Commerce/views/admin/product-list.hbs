@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Product List</title>
+
+    <link rel="stylesheet" href="/style/product-list.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+</head>
+
+<body>
+
+    {{> navbar}}
+
+    {{!-- <h1>Admin Product List</h1> --}}
+
+    {{> category_list Product= Product}}
+
+
+
+    {{!-- <div class="product-list">
+        {{#each Product as |category|}}
+
+        {{#each category as |p|}}
+
+        <div class="product-item">
+
+            <img src={{p.imageUrl}}>
+            <h3>Product Name: {{p.name}}</h3>
+            <h3>Product Price:{{p.price}}</h3>
+
+            <div class="product-list">
+                <a href="/admin/products/update/{{id}}">
+                    <button>✏️</button>
+                </a>
+
+                <a href="/admin/products/delete/{{id}}">
+                    <button>🪣</button>
+                </a>
+
+            </div>
+        </div>
+
+        {{/each}}
+        {{/each}}
+    </div>
+    --}}
+
+</body> 
+</html>

@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "68850fb157eb66abe62841f3"
+  },
+  "name": "Laptop",
+  "price": 50000,
+  "description": "Best laptop ever",
+  "reviews": [],
+  "seller": "DELL",
+  "imageUrl": "https://up.yimg.com/ib/th/id/OIP.Sap1tVVy17u4J2aHV8nqTQHaE8?pid=Api&rs=1&c=1&qlt=95&w=179&h=119",
+  "__v": 0,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "6885f9d11f5dff4d67cef371"
+  },
+  "name": "AC",
+  "price": 35999,
+  "description": "Good",
+  "reviews": [],
+  "seller": "LG",
+  "imageUrl": "https://up.yimg.com/ib/th/id/OIP.bspCFgpF40G3zDT-ObpHRwHaE0?pid=Api&rs=1&c=1&qlt=95&w=167&h=108",
+  "__v": 0,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "68873dd1655df8bae0d0aa0e"
+  },
+  "name": "TV",
+  "price": 25000,
+  "description": "Good",
+  "reviews": [],
+  "seller": "DELL",
+  "imageUrl": "https://up.yimg.com/ib/th/id/OIP._OAb31KUJONlnq-c4P6kLwHaHa?pid=Api&rs=1&c=1&qlt=95&w=103&h=103",
+  "__v": 0,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "68873ded655df8bae0d0aa11"
+  },
+  "name": "Headphone",
+  "price": 1000,
+  "description": "Good",
+  "reviews": [],
+  "seller": "BOAT",
+  "imageUrl": "https://up.yimg.com/ib/th/id/OIP.gk4GXueMxp8GtoXINUGxWwHaFi?pid=Api&rs=1&c=1&qlt=95&w=142&h=106",
+  "__v": 0,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "68873e2a655df8bae0d0aa24"
+  },
+  "name": "Mobile",
+  "price": 10000,
+  "description": "Blast",
+  "reviews": [],
+  "seller": "Nokia",
+  "imageUrl": "https://tse4.mm.bing.net/th/id/OIP.fdLeozmS48Mh24KqPULLBQHaE8?pid=Api&P=0&h=180",
+  "__v": 0,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "688749933a2ce9284d24e902"
+  },
+  "name": "Pizza",
+  "imageUrl": "https://cdn-icons-png.flaticon.com/512/1404/1404945.png",
+  "price": 12.99,
+  "description": "A delicious pizza topped with pepperoni, mushrooms, and cheese.",
+  "category": "Food"
+},
+{
+  "_id": {
+    "$oid": "688749933a2ce9284d24e903"
+  },
+  "name": "Burger",
+  "imageUrl": "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
+  "price": 9.99,
+  "description": "A juicy burger with lettuce, tomato, onion, and cheese.",
+  "category": "Food"
+},
+{
+  "_id": {
+    "$oid": "688749933a2ce9284d24e904"
+  },
+  "name": "Sushi",
+  "imageUrl": "https://cdn-icons-png.flaticon.com/512/3480/3480219.png",
+  "price": 18.99,
+  "description": "Fresh sushi rolls with assorted fish, avocado, and rice.",
+  "category": "Food"
+},
+{
+  "_id": {
+    "$oid": "688749933a2ce9284d24e905"
+  },
+  "name": "Pasta",
+  "imageUrl": "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
+  "price": 14.99,
+  "description": "Homemade pasta served with marinara sauce and parmesan cheese.",
+  "category": "Food"
+},
+{
+  "_id": {
+    "$oid": "688749933a2ce9284d24e906"
+  },
+  "name": "Salad",
+  "imageUrl": "https://cdn-icons-png.flaticon.com/512/590/590685.png",
+  "price": 8.99,
+  "description": "A refreshing salad with mixed greens, tomatoes, cucumbers, and balsamic vinaigrette.",
+  "category": "Food"
+},
+{
+  "_id": {
+    "$oid": "688749933a2ce9284d24e907"
+  },
+  "name": "Gobhi sabzi",
+  "imageUrl": "https://cdn-icons-png.flaticon.com/512/4814/4814653.png",
+  "price": 108.99,
+  "description": "Spicy potato and cauliflower dish.",
+  "category": "Food"
+},
+{
+  "_id": {
+    "$oid": "688749933a2ce9284d24e908"
+  },
+  "name": "Laddu",
+  "imageUrl": "https://cdn-icons-png.flaticon.com/512/6153/6153925.png",
+  "price": 208,
+  "description": "Traditional Indian sweet, perfect for festivals.",
+  "category": "Food"
+},
+{
+  "_id": {
+    "$oid": "68874ca73a2ce9284d24e909"
+  },
+  "name": "Shirt",
+  "price": 2000,
+  "imageUrl": "https://m.media-amazon.com/images/I/81ZUL5rCfmL._AC_UY1100_.jpg",
+  "description": "This is a shirt",
+  "seller": "Denim",
+  "category": "fashion"
+},
+{
+  "_id": {
+    "$oid": "68874ca73a2ce9284d24e90a"
+  },
+  "name": "Jeans",
+  "price": 2000,
+  "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5QUB3eRluzY3SZxdSDZFA3rjsINvARNmRw&s",
+  "description": "This is a Jeans",
+  "seller": "Denim",
+  "category": "fashion"
+},
+{
+  "_id": {
+    "$oid": "68874ca73a2ce9284d24e90b"
+  },
+  "name": "Shoes",
+  "price": 2000,
+  "imageUrl": "https://rukminim2.flixcart.com/image/450/500/xif0q/shoe/7/z/r/8-white-leaf-8-urbanbox-white-black-original-imagvgf4cuzs2hrw.jpeg?q=90&crop=false",
+  "description": "This is a Shoe",
+  "seller": "Denim",
+  "category": "fashion"
+}]

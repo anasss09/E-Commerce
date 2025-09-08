@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/style/navbar.css">
+    <style>
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .classList-items {
+            display: flex;
+        }
+
+        .classList-items a:link,
+        .classList-items a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        .buyNowButton {
+            padding: 5px 8px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            background-color: yellowgreen;
+        }
+
+        .buyNowButton:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    {{> navbar}}
+
+    <h1>Welcome to Cart Page</h1>
+    Total Price: <span class="totalPrice">{{totalPrice}}</span>
+    <ul class="cart-list">
+        {{#each cart as |c|}}
+
+        <li class="classList-items">
+            <div>
+                <img src={{c.id.imageUrl}}>
+            </div>
+
+            <div style="margin-left: 25px;">
+                <p>Name: {{c.id.name}}</p>
+                <p>Price: {{c.id.price}}</p>
+                <div>Quantity:
+                    <a href="/shop/cart/increase/:id">
+                        <button class="increaseQuantity">+</button>
+                    </a>
+
+                    {{c.quantity}}
+
+                    <a href="/shop/cart/decrease/:id">
+                        <button class="decreaseQuantity">-</button>
+                    </a>
+
+                    <div id={{c.id._id}}> </div>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+
+    <a href="/shop/cart/buy">
+        <button class="buyNowButton">
+            Buy Now
+        </button>
+    </a>
+
+    <script src="/js/utils/axios.min.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>
