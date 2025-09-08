@@ -10,7 +10,14 @@ app.use(session({
   secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: true,
-  store: MongoStore.create({ mongoUrl: process.env.DB_PATH })
+  store: MongoStore.create({ mongoUrl: process.env.DB_PATH,
+    ttl: 14 * 24 * 60 * 60
+   }),
+    cookie: {
+      secure: process.env.NODE_ENV === "production", // only HTTPS in prod
+      httpOnly: true,
+      sameSite: "lax"
+    }
 }))
 
 const passport = require('./authentication/passport')
